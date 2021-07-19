@@ -19,9 +19,13 @@ var objectStudents = [
         age: 27,
     },
 ];
-console.table(objectStudents);
 var names = prompt("Nome?");
-var surname = prompt("Cognome?");
+var surname = prompt("Cognome?")
 var age = parseInt(prompt("Età?"));
-objectStudents.names = names;
+var newUser = {
+    names: names,
+    surname: surname,
+    age: age,
+}
+objectStudents.push(newUser);
 console.table(objectStudents);
